@@ -1,0 +1,41 @@
+.card-body .card {
+    background-color: #C1EEFF;
+}
+
+.navbar {
+    margin:auto;
+    vertical-align: middle;
+}
+
+.content-background {
+    background-color: #F6E8EA;
+    text-align: justify;
+}
+
+.container {
+    text-align: inherit;
+}
+
+.bio {
+    padding-top:30px;
+    padding-bottom: 30px;
+    font-size: 25px;
+}
+
+.bio:hover {
+    padding-top:35px;
+    padding-bottom: 35px;
+    transition:.5s
+}
+/*
+oxford blue:
+#002642 
+isabelline:
+#F6E8EA
+light carmine pink:
+#EF626C
+middle blue green:
+#84DCCF
+diamond:
+#C1EEFF
+*/

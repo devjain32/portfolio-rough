@@ -1,0 +1,142 @@
+.masonry {
+    transition: all .5s ease-in-out;
+    column-gap: 30px;
+    column-fill: initial;
+}
+
+/* Masonry item */
+.masonry .brick {
+    margin-bottom: 30px;
+    display: inline-block;
+    /* Fix the misalignment of items */
+    vertical-align: top;
+    /* Keep the item on the very top */
+}
+
+/* Masonry image effects */
+.masonry .brick img  {
+    transition: all .5s ease-in-out;
+    backface-visibility: hidden;
+    /* Remove Image flickering on hover */
+}
+
+.masonry .brick:hover img {
+    opacity: .7;
+}
+
+.masonry.bordered {
+    column-rule: 1px solid #EF626C
+    ;
+    column-gap: 50px;
+}
+
+.masonry.bordered .brick {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #EF626C;
+}
+
+/* Gutterless masonry */
+.masonry.gutterless {
+    column-gap: 0;
+}
+
+.masonry.gutterless .brick {
+    margin-bottom: 0;
+}
+
+/* Masonry on tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .masonry {
+        column-count: 2;
+    }
+}
+
+/* Masonry on big screens */
+@media only screen and (min-width: 1024px) {
+    .desc {
+        font-size: 1.25em;
+    }
+
+    .intro {
+        letter-spacing: 1px;
+    }
+
+    .masonry {
+        column-count: 3;
+    }
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("https://images.unsplash.com/photo-1514970746-d4a465d514d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");
+  
+    /* Set a specific height */
+    height: 500px; 
+  
+    /* Create the fax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+  }
+
+
+  .fadeScroll {
+    margin: 0;
+    position: relative;
+    width: 100%;
+    margin-top: 10%;
+    text-align: center;
+    font-family: 'helvetica';
+    font-size: 80px;
+    font-weight: 100;
+    color:#002642;
+    margin:auto;
+  }
+  
+  .titleScroll {
+    position: absolute;
+    top: 60%;
+    left: 100px;
+    font-family: 'Raleway', sans-serif;
+
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 15%;
+    transform: translate(-50%, -50%);
+  }
+
+.centeringParallax {
+    top: 50%;
+    left: 50%;
+    transform: translate(45%, 100%);
+    padding-top: 7%;
+}
+
+@media only screen and (max-width: 1100px) {
+    .fadeScroll {
+      font-size: 50px;
+      margin-top: 15%
+    }
+  }
+
+.welcome {
+    font-size: 60px;
+
+}
+
+.iam {
+    color:#EF626C;
+    font-size: 40px;
+}
+
+.welcome:hover {
+    font-size: 65px;
+    transition:.5s;
+}
+
